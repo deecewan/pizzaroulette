@@ -1,0 +1,18 @@
+{
+  "name": "pizzaroulette",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "David Buchan-Swanson",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32"
+  },
+  "dependencies": {
+    "koa": "^2.4.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "semantic-ui-react": "^0.76.0"
+  }
+}
