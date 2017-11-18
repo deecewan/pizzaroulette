@@ -5,15 +5,18 @@
   "author": "David Buchan-Swanson",
   "license": "MIT",
   "scripts": {
+    "boot": "pm2 start server/out/index.js",
     "build": "yarn build:server && yarn build:client",
     "build:client": "yarn webpack --config client/webpack.config.babel.js",
-    "build:server": "yarn babel -d ./server/out ./server/src"
+    "build:server": "yarn babel -d ./server/out ./server/src",
+    "reboot": "pm2 reload all"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.32",
     "@babel/core": "^7.0.0-beta.32",
     "@babel/preset-env": "^7.0.0-beta.32",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "pm2": "^2.7.2"
   },
   "dependencies": {
     "koa": "^2.4.1",
